@@ -6,7 +6,7 @@ import GanttChart from "./components/GanttChart";
 import TaskForm from "./components/TaskForm";
 import "./styles/App.css";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://your-backend-app.azurewebsites.net";
 
 // 週ごと達成率グラフ用コンポーネント
 const WeeklyCompletionGraph = ({ groupedTasks }) => {
