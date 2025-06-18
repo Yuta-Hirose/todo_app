@@ -20,8 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true
-          lfs: false
+        app_location: "."        # または ""（空欄）
+        output_location: "build" # Reactの場合
+        submodules: true
+        lfs: false
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
       - name: Get Id Token
