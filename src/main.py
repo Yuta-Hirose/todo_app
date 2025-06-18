@@ -4,8 +4,10 @@ from pydantic import BaseModel
 import sqlite3
 from typing import Optional
 import csv
+import os
 
 app = FastAPI()
+app_client_id = os.environ['APP_CLIENT_ID']
 
 app.add_middleware(
     CORSMiddleware,
